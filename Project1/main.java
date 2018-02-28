@@ -1,4 +1,13 @@
-public static void main(String[] args)
+public class main
 {
-	System.out.println("OKOKOK");
+	public static void main(String[] args)
+	{
+		sayHello();
+
+	}
+
+	public static void sayHello()
+	{
+		System.out.println("Hello");
+	}
 }
