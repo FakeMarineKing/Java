@@ -7,23 +7,26 @@ import javax.swing.Timer;
 
 public class Pong implements ActionListener
 {
-	public static Pong pong;
 	
-	public int width = 700, heigth = 700;
+	public int width = 700;
+	public int heigth = 700;
 	public Renderer renderer;
+	public Bar bar ;
+	
 
+	
 	public Pong()
 	{
 		Timer timer = new Timer(20, this);
 		JFrame jframe = new JFrame("Pong");
 	
 		renderer = new Renderer();
-
-		jframe.setsize(width, height);
+		bar = new Bar();
+		jframe.setSize(width, heigth);
 		jframe.setVisible(true);
 		jframe.add(renderer);
-
-		timer.start();
+		
+		timer.start(); 
 	}
 
 	public void update()
@@ -33,7 +36,7 @@ public class Pong implements ActionListener
 	
 	public void render(Graphics g)
 	{
-	
+		bar.draw(g);
 	}
 
 	@Override
@@ -41,9 +44,5 @@ public class Pong implements ActionListener
 	{
 		update();
 		renderer.repaint();
-	}
-	public static void main(String[] args)
-	{
-		pong = new Pong();	
 	}
 }

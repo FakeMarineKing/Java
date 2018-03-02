@@ -7,7 +7,7 @@ public class Renderer extends JPanel
 	
 	public void render(Graphics g)
 	{
-	
+		
 	}
 
 
@@ -15,8 +15,6 @@ public class Renderer extends JPanel
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-
-		Pong.pong.render();
-	
+		Pong.pong.render(g);
 	}
 }
