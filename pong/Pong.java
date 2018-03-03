@@ -36,7 +36,6 @@ public class Pong implements ActionListener
 	
 	public void render(Graphics g)
 	{
-		bar.draw(g);
 	}
 
 	@Override

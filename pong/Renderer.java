@@ -5,8 +5,9 @@ public class Renderer extends JPanel
 {
 	private static final long serialVersionUID = 1L;
 	
-	public void render(Graphics g)
+	public void Renderer()
 	{
+		
 		
 	}
 
@@ -14,7 +15,9 @@ public class Renderer extends JPanel
 	@Override
 	protected void paintComponent(Graphics g)
 	{
+
 		super.paintComponent(g);
-		Pong.pong.render(g);
+		pong.renderer(g);
+		pong.bar.draw();
 	}
 }

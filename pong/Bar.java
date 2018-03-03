@@ -6,8 +6,10 @@ public class Bar extends JPanel
 	private int x;
 	private int length;
 
-	public void bar()
+	public void Bar()
 	{
+		while(true)
+		System.out.println("OOOOOOOOOOOOOOOOOOOOOOO");
 		this.x=5;
 		this.length=30;
 	}
@@ -24,9 +26,9 @@ public class Bar extends JPanel
 	
 	public void draw(Graphics g)
 	{
+	
 		while(true)
 		System.out.println("OOOOOOOOOOOOOOOOOOOOOOO");
-		
 		g.setColor(Color.black);
 		g.drawLine(this.x,20,this.x+this.length,20);
 	}
